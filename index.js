@@ -25,17 +25,19 @@ function convertToCelsius(f) {
    */
 
   function describeTemperature(f) {
+    let message
     if (f < 32) {
-      return `very cold`;
+      message = `very cold`;
     } else if (f < 64) {
-      return `cold`;
+      message = `cold`;
     } else if (f < 86) {
-      return `warm`;
+      message = `warm`;
     } else if (f < 100) {
-      return `hot`;
+      message = `hot`;
     } else {
-      return `very hot`;
+      message = `very hot`;
     }
+    return message
   }
 
   
